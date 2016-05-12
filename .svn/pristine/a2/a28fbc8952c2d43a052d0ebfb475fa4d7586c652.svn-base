@@ -1,0 +1,50 @@
+.head{
+	height:86px;
+	width: 100%;
+	background-color: #1D7AD9;
+}
+.limit{
+	width: 460px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.limit h3{
+	font-family: "微软雅黑";
+	font-size: 22px;
+	color: #FFFFFF;
+	float: left;
+	line-height: 86px;
+	margin-left: 25px;
+}
+/*登陆的主体部分*/
+.rebody{
+	height:600px;
+	
+}
+.rebox{
+	margin-top:12px;
+	height:360px;
+	border: 1px solid #E8E8E8;
+}
+
+.limit1{
+	line-height:30px;
+	margin-top:43px;
+	width:312px;
+	margin-right:auto;
+	margin-left: auto;
+	
+}
+
+.comInput{
+	
+	width: 300px;
+	height: 33px;
+}
+.login{
+	display:inline-block;
+	margin-top: 37px;
+	margin-bottom: 36px;
+}
+
+

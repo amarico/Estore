@@ -1,0 +1,237 @@
+/*topBar部分样式*/
+.topBar{
+  height: 32px;
+  background-color:  #F7F7F7;
+  line-height: 32px;
+}
+.leftArea{
+  display:inline-block;
+  font-weight: bold;
+  float: left;
+}
+.rightArea{
+	display: inline-block;
+	float: right;
+	
+}
+/*serchBox部分样式*/
+.serchBox{
+	height:85px;
+	background-color: #1D7AD9;
+}
+.logoImage{
+	display:inline-block;
+	padding-left: 40px;
+	padding-top:15px;
+}
+.serBox{
+	padding-top: 23px;
+	margin-left: 185px;
+}
+.serId{
+	display: inline-block;
+	height:35px;
+	width:360px;
+	border: 0px;
+}
+.serAction{
+	height:35px;
+	width:70px;
+	border: 0px;
+	background-color: #FF8C00;
+}
+
+.shopMessage{
+    display:inline-block;
+    height:35px;
+    width:145px;
+	margin-top: 25px;
+	margin-left: 30px;
+	background-color: #FF8C00;
+    line-height: 35px;
+		
+}
+.shopCar{
+	
+}
+.shopCar img{
+	display:inline-block;
+	margin-top: 6px;
+	margin-left: 10px;
+}
+.shopCar li{
+	margin-left: 3px;
+}
+
+
+.shopNum img{
+		display:inline-block;
+		margin-top: 12px;
+	margin-right: 10px;
+}
+.shopNum li{
+	margin-right: 3px;
+}
+
+/*navBox部分样式*/
+.navBox{
+	height:35px;
+	background-color: #1369C0;
+	line-height: 35px;
+}
+.headLine{
+	width:189px;
+}
+.keyWord li{
+	display:inline-block;
+	width:100px;
+	font-size:14px;
+	float:left;
+}
+/*snavBox部分样式*/
+.snavBox{
+	height:325px;
+}
+.navLine{
+	width: 189px;
+	height:325px;
+	background-color: #4593FD;
+}
+.navLine>div{
+	height:64px;
+    border-bottom-width:1px;
+	border-bottom-style: solid;
+	border-bottom-color: #5AA1FE;
+	
+	
+}
+.navLine>li{
+	margin-top:7px;
+	margin-left: 10px;
+}
+.navLine>h3{
+	margin-left: 10px;
+}
+.shopLina{
+	margin-top: 7px;
+}
+.triangle{
+	margin-top: 10px;
+	margin-right: 12px;
+}
+.biglook{
+	height:325px;
+	width:811px;
+}
+
+/*这个是商品信息的部分样式*/
+.showD{
+	height:476px;
+}
+.guidepic{
+	height:75px;
+	line-height: 75px;
+}
+.guidepic>h1{
+	display: inline-block;
+    float:left;
+    margin-left: 15px;
+}
+.guidepic>img{
+	display: inline-block;
+    float:left;
+   	margin-top: 15px;
+}
+.secondGuide{
+	height:400px;
+}
+.good11{
+	height:300px;
+	width:200px;
+	border-bottom-color: #E5E5E5;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-top-color: #E5E5E5;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-right-color: #E5E5E5;
+	border-right-style: solid;
+	border-right-width: 1px;
+	text-align: center;
+}
+.good1m{
+	
+	margin-top: 46px;
+	}
+
+.good1mm{
+	margin-top: 20px;
+	}
+.good12{
+	text-align:center;
+	height:100px;
+	width:200px;
+	border-right-color: #E5E5E5;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-bottom-color: #FF7300;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+}
+.smallPic{
+	display: inline-block;
+	height:100px;
+	width:100px;
+	margin-top: 20px;
+}
+.picPric{
+	display: inline-block;
+	height:100px;
+	width:100px;
+	margin-top: 20px;
+}
+.clearindex{
+	height:40px;
+}
+
+.webDetail{
+	height:223px;
+	background-color: #D4D4D4;
+}
+.legalMessage{
+    
+	width:718px;
+	height:41px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top:55px;
+	text-align: center;
+	
+}
+.legalMessage>p{
+	display:inline-block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.believeweb{
+	width:660px;
+	height:46px;
+	margin-top: 35px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.believeweb>img{
+	
+	margin-left: 13px;
+	margin-right: 13px;
+}
+
+
+
+
+
+
+
+
+
+

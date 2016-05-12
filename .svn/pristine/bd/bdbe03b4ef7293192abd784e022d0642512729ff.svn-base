@@ -1,0 +1,188 @@
+<%@ page language="java"
+	import="java.util.*,entity.*,service.*,service_impl.*"
+	pageEncoding="utf-8"%>
+<%
+	String path = request.getContextPath();
+	String basePath = request.getScheme() + "://"
+			+ request.getServerName() + ":" + request.getServerPort()
+			+ path + "/";
+%>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<base href="<%=basePath%>">
+
+		<title>个人中心a </title>
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="cache-control" content="no-cache">
+		<meta http-equiv="expires" content="0">
+		<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+		<meta http-equiv="description" content="This is my page">
+
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="stylesheet" type="text/css" href="css/personCenter.css">
+		<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+		<script type="text/javascript" src="js/personCenter.js"></script>
+
+	</head>
+	<body>
+
+		<!-- 顶栏部分 -->
+		<div class="head">
+			<div class="comWidth">
+				<!-- 上顶栏 -->
+
+				<div class="headline">
+					<b>收藏乐购</b>
+					<span>欢迎来到乐购网&nbsp;&nbsp;&nbsp;&nbsp;登录&nbsp;&nbsp;注册</span>
+				</div>
+				<!-- 中顶栏 -->
+				<div class="headmiddle">
+					<!-- 搜索框 -->
+					<div class="searchBox">
+						<input type="text">
+						<button type="button">
+							提交
+						</button>
+					</div>
+					<!-- 购物车 -->
+					<div class="shopcar">
+						<span>购物车</span>
+						<span>0</span>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+
+
+
+		<!-- 中部 -->
+		<div class="midle">
+			<div class="comWidth">
+				<!-- 导航栏 -->
+				<div class="guideline">
+					<span title="1">个人中心</span>
+					<span title="2">订单详情</span>
+					<span title="3">购物车</span>
+				</div>
+				<!-- 内容 -->
+				<div class="guidecontent">
+					<div class="personcenter">
+
+						<%
+							UsersDAO udao = new UsersDAOImpl();
+							String username = (String) session.getAttribute("username");
+							Users user = udao.userDetail(username);
+						%>
+						<p>
+							<span>用户名:</span><%=user.getUsername()%></p>
+						<p>
+							<span>邮箱:</span><%=user.getEmail()%>&nbsp;&nbsp;
+							<a href="">修改</a>
+						</p>
+						<p>
+							<span>地址:</span><%=user.getAddress()%>&nbsp;&nbsp;
+							<a href="">修改</a>
+						</p>
+
+					
+
+					</div>
+					<div class="tradedetail">
+
+						<%
+							Integer uid = (Integer) session.getAttribute("userid");
+							TradeDAO tdao = new TradeDAOImpl();
+							AddressDAO adao=new AddressDAOImpl();
+							InvoiceDAO idao=new InvoiceDAOImpl();
+							TradeGoodsDAO tgdao=new TradeGoodsDAOImpl();
+							List<Trade> list = tdao.reTradeList(uid);
+							for (Trade trade : list) {
+						%>
+						<p><span>支付方式:</span>
+							<%
+								if (trade.getPayway() == 2) {
+							%>
+							微信支付
+							<%
+								} else {
+							%>
+							货到付款
+							<%
+								}
+							%>
+						</p>
+						
+						
+						<p>
+							<span>地址信息:</span>
+							<%
+							Address	address=adao.reAddressByAid(trade.getAid());
+							%>
+							<%=address.getAddress() %>
+							<%=address.getConsignee() %>
+							<%=address.getPhoneNumber() %>
+							
+							
+							</p>
+						<p>
+							<span>发票信息:</span>
+							<%
+							
+							Invoice invoice=idao.reInvioce(trade.getInvoiceid());
+							 %>
+							 <%=invoice.getIheader() %>
+							<%=invoice.getIname() %>
+							<%=invoice.getItype() %>
+							</p>
+						<P>
+							<span>商品信息:</span>
+							
+							<!-- 提取该交易商品信息极其数量 -->
+							
+							
+							
+							</P>
+						<%
+							}
+						%>
+
+					</div>
+					<div class="shopcardetail">
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 底栏 -->
+		<div class="">
+
+
+
+
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</body>
+</html>

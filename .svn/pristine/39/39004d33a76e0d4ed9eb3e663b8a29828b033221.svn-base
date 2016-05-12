@@ -1,0 +1,100 @@
+.head{
+	height:40px;
+	line-height: 40px;
+	background-color: #F7F7F7;
+}
+.head span{
+	background:url(../image/star.jpg) 10px center no-repeat;
+	text-indent: 30px;
+	font-family:"ËÎÌו","simsun";
+	font-weight: bold;
+}
+.head p{
+	font
+}
+
+/*logo*/
+.headamong{
+	height:85px;
+	background-color: #1D7AD9;
+}
+.logoPos{
+	width: 112px;
+	height: 59px;
+    margin-left:40px;
+    margin-top: 15px;
+  
+  
+}
+
+.trade{
+	border: 1px solid #E8E8E8;
+	
+	margin-top: 15px;
+}
+.tradeheight{
+	height: 260px;
+}
+.trade h3{
+	text-indent:11px;
+	line-height:33px;
+	height: 33px;
+	background-color: #F4F4F4;
+}
+
+
+
+.address{
+	height:205px;
+	width: 567px;
+	margin-left: 30px;
+	margin-top: 20px;
+	
+}
+.address p{
+	line-height: 40px;
+}
+
+
+
+.payheight{
+	height:135px;
+}
+.invoiceheight{
+	height:210px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*foot*/
+.foot{
+	margin-top:30px;
+	padding-top:55px;
+	line-height:27px;
+	height:223px;
+	width:100%;
+    text-align: center;
+	background-color: #D4D4D4;
+}
+.foot img{
+	margin-top:38px;
+	margin-left: 11px;
+	margin-right: 11px;
+}

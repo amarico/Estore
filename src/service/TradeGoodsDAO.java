@@ -1,0 +1,17 @@
+package service;
+
+import java.util.List;
+
+import entity.Goods;
+import entity.TradeGoods;
+
+//交易信息的附表
+public interface TradeGoodsDAO {
+	
+	//纯粹的添加信息
+	public boolean  addTradeGoods(TradeGoods tradeGoodss);
+	//根据交易id查找商品的信息
+	public List<TradeGoods> reGoodsByTrade(int tradeid);
+
+
+}

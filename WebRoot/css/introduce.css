@@ -1,0 +1,267 @@
+.head{
+	height:40px;
+	line-height: 40px;
+	background-color: #F7F7F7;
+}
+.head span{
+	background:url(../image/star.jpg) 10px center no-repeat;
+	text-indent: 30px;
+	font-family:"宋体","simsun";
+	font-weight: bold;
+}
+.head p{
+	font
+}
+
+/*logo位置*/
+.headamong{
+	height:85px;
+	background-color: #1D7AD9;
+}
+.logoPos{
+	width: 112px;
+	height: 59px;
+    margin-left:40px;
+    margin-top: 15px;
+  
+  
+}
+
+.searchText{
+   margin-left:120px;
+   height: 37px;
+   width: 430px;
+   margin-top: 25px;
+}
+.searchMessage{
+	height:37px;
+	width: 360px;
+	border: 0;
+}
+.searchButton{
+	height:37px;
+	width:70px;
+	border: 0;
+	background-color: #FF8C00;
+}
+.shopcar{
+	height: 37px;
+	width: 145px;
+	background-color: #FF8800;
+	line-height: 37px;
+	margin-right: 60px;
+	 margin-top: 25px;
+}
+.shopcar span{
+	text-indent:40px;
+	height:37px;
+	width:90px;
+	background: url("../image/shopCar.jpg") 10px center no-repeat;
+	border-right: 1px solid #E27A00;
+}
+.shopcar li{
+	height:37px;
+	width:34px;
+background: url("../image/shopnum.jpg") 10px center no-repeat;
+}
+/*导航栏部分*/
+
+.guideLine{
+	color: #FFFFFF;
+	height:35px;
+	text-align:center;
+	background-color: #1369C0;
+	line-height: 35px;
+	font-family:"微软雅黑";
+	
+}
+.guideLine h3{
+	position:relative;
+	height:35px;
+	width:190px;
+	font-size: 16px;
+	float: left;
+	background: url("../image/lowTra.jpg") 160px center no-repeat;
+
+}
+.guideLine ul{
+	float: left;
+	height: 35px;
+	width: 600px;
+	margin-left: 30px;
+	
+}
+.guideLine li{
+
+	height:35px;
+	width:100px;
+	font-size:14px;
+	float: left;
+
+}
+.active{
+	background-color: #4593FD;
+}
+/*给主体加上颜色*/
+.Messageguide{
+	height:50px;
+	line-height: 50px;
+}
+
+.pic{
+	height:600px;
+	border: 1px solid #E8E8E8;
+}
+.leftArea{
+	height:600px;
+	width: 309px;
+	border-right:1px solid #E8E8E8; 
+
+}
+.rightArea{
+	height:600px;
+	width: 690px;
+	
+}
+.bigpic{
+	height:340px;
+	text-align: center;
+}
+.bigpic img{
+	padding-top: 20px;
+}
+.smallpic{
+	width: 266px;
+	height:54px;
+	background-color: blue;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.rightArea p{
+	line-height: 33px;
+	padding-left: 26px;
+}
+.rightArea h3{
+	padding-top:27px;
+	padding-left: 26px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+}
+.goodeDetail{
+	width: 670px;
+	height:245px;
+	
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.goodeDetail a{
+	display:block;
+	padding: 4px 6px;
+    border: 1px solid #ccc;
+    background: #fff;
+	}
+.buyColor{
+	float: left;
+	padding-top: 20px;
+	}
+.buyway{
+	
+	height:34px;
+	float: left;
+	text-align: center;	
+	}
+.itemm{
+	height:34px;
+	width: 83px;
+	text-align: center;
+	float: left;
+	margin-left: 15px;
+	}
+.rightArea input{
+	margin-top:30px;
+	width: 184px;
+	height:48px;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+.attention{
+	margin-top: 38px;
+}
+/*商品评价部分*/
+.haha{
+	height:2000px;
+}
+.leftIntroduce{
+	width: 190px;
+	float: left;
+
+}
+.goodTrade{
+	margin-top: 17px;
+	
+	
+}
+.goodTrade h3{
+	height: 40px;
+	background-color: #F3F3F3;
+	text-indent: 16px;
+	line-height: 40px;
+	border-bottom: 1px solid #E8E8E8; 
+}
+
+.good{
+	height: 200px;
+}
+.goodImg{
+	text-align:center;
+	height: 150px;
+}
+.goodImg img{
+	padding-top: 15px;
+}
+.intro{
+	padding-left:17px;
+	padding-right:17px;
+	height:50px;
+}
+
+.goodIntroduce{
+	width: 788px;
+	height: 150px;
+	float: right;
+	margin-top: 17px;
+}
+.goodIntroduce h3{
+	display:inline-block;
+	width: 388px;
+	text-align: center;
+	line-height:40px;
+	height: 40px;
+	border: 1px solid #E8E8E8; 
+}
+.valuationG{
+	height:160px;
+
+}
+
+/*foot*/
+.foot{
+	padding-top:55px;
+	line-height:27px;
+	height:223px;
+	width:100%;
+    text-align: center;
+	background-color: #D4D4D4;
+}
+.foot img{
+	margin-top:38px;
+	margin-left: 11px;
+	margin-right: 11px;
+}
+
+
+
+
+

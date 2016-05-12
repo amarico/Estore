@@ -1,0 +1,12 @@
+package service;
+
+import entity.Admin;
+
+public interface AdminDAO {
+	//返回是否登录成功信息
+	public boolean adminLogin(Admin admin);
+	//返回用户全部信息
+	public Admin adminDetail(Admin admin);
+	
+
+}

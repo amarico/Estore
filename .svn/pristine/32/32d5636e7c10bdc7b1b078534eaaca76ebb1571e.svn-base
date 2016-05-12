@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+	<package name="default" namespace="/" extends="struts-default">
+
+
+	</package>
+	<package name="users" namespace="/users" extends="default">
+
+		<action name="*_*" class="action.{1}Action" method="{2}">
+			<result name="login_success">/index.jsp</result>
+			<result name="login_failure">/register.jsp</result>		
+			<result name="register_success">/register.jsp</result>
+			<result name="register_failure">/test.jsp</result>
+			<result name="logout_success">/index.jsp</result>
+			<result name="change_success">/personCenter.jsp</result>
+			<result name="to_email">/personCenterEmail.jsp</result>
+			<result name="to_address">/personCenterAddress.jsp</result>
+			
+			
+		</action>
+	</package>
+	<package name="adminss" namespace="/adminss" extends="default">
+		<action name="*_*" class="action.{1}Action" method="{2}">
+			<result name="login_success">/adminCenter.jsp</result>
+			<result name="login_faile">/adminLogin.jsp</result>
+		</action>
+	</package>
+	
+	<package name="goods" namespace="/goods" extends="default">
+		<action name="*_*" class="action.{1}Action" method="{2}">
+			<result name="add_success">/adminCenter.jsp</result>
+			<result name="add_failure">/adminLogin.jsp</result>
+		</action>
+	</package>
+	
+	<package name="address" namespace="/address" extends="default">
+		<action name="*_*" class="action.{1}Action" method="{2}">
+			<result name="add_success">/valuation.jsp</result>
+			<result name="add_failure">/test.jsp</result>
+		</action>
+	</package>
+    <package name="invoice" namespace="/invoice" extends="default">
+       <action name="*_*" class="action.{1}Action" method="{2}">
+			<result name="add_success">/valuation.jsp</result>
+			<result name="add_failure">/test.jsp</result>
+		</action>
+    </package>
+    
+     <package name="shopcar" namespace="/shopcar" extends="default">
+       <action name="*_*" class="action.{1}Action" method="{2}">
+			<result name="add_success">/account.jsp</result>
+			<result name="add_failure">/test.jsp</result>
+		</action>
+    </package>
+    
+    
+    
+     <package name="account" namespace="/account" extends="default">
+       <action name="*_*" class="action.{1}Action" method="{2}">
+			<result name="deal_success">/test.jsp</result>
+			<result name="deal_failure">/test.jsp</result>
+		</action>
+    </package>
+
+
+
+    <package name="valuation" namespace="/valuation" extends="default">
+       <action name="*_*" class="action.{1}Action" method="{2}">
+			
+		</action>
+    </package>
+    
+</struts>

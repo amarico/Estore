@@ -1,0 +1,124 @@
+/*上顶栏*/
+.headline {
+	height: 32px;
+	line-height: 32px;
+	background-color: #F7F7F7;
+}
+
+.headline>span {
+	float: right;
+	margin-right: 20px;
+}
+
+/*中顶栏*/
+.headmiddle {
+	height: 85px;
+	background-color: #1D7AD9;
+}
+
+.searchBox {
+	float: left;
+	margin-left: 336px;
+	margin-top: 23px;
+	width: 430px;
+}
+
+.searchBox>input {
+	border: 0;
+	padding: 0;
+	margin: 0;
+	height: 35px;
+	width: 360px;
+	float: left;
+}
+
+.searchBox>button {
+	border: 0;
+	padding: 0;
+	margin: 0;
+	height: 35px;
+	width: 70px;
+	background-color: #FF8C00;
+}
+
+.shopcar {
+	float: right;
+	width: 145px;
+	height: 35px;
+	line-height: 35px;
+	margin-right: 60px;
+	margin-top: 23px;
+	background-color: #FF8800;
+}
+
+.shopcar>span:first-child {
+	display: inline-block;
+	width: 87px;
+	text-indent: 41px;
+	border-right: 1px solid #E27A00;
+}
+
+.shopcar>span:last-child {
+	
+}
+
+/*中部*/
+.midle {
+	
+}
+
+.guideline>span {
+	padding: 0;
+	border: 0;
+	float: left;
+	width: 332px;
+	line-height: 33px;
+	text-align: center;
+	display: inline-block;
+	background-color: #FF8C00;
+}
+
+.guideline>span:first-child {
+	border-right: 1px solid #E27A00;
+}
+
+.guideline>span:last-child {
+	border-left: 1px solid #E27A00;
+}
+
+/*内容*/
+.usercenter{
+	
+	font-size: 20px;
+	width:300px;
+	float: left;
+	margin-top: 50px;
+	margin-left: 350px;
+	
+	}
+.usercenter span{
+	float: left;
+}
+.usercenter a{
+	float: right;
+	}
+	
+
+	
+	
+.goodsAdd {
+	
+	display: none;
+	width:500px;
+	height:80px;
+	
+	float:left;
+	margin-top:50px;
+	background-color: red;
+}
+
+.goodsDelete {
+	display: none;
+	height:200px;
+	background-color: red;
+}

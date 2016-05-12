@@ -1,0 +1,12 @@
+<!-- 搜索框 -->
+					<div class="searchBox">
+						<input type="text">
+						<button type="button">
+							提交
+						</button>
+					</div>
+					<!-- 购物车 -->
+					<div class="shopcar">
+						<span>购物车</span>
+						<span>0</span>
+					</div>

@@ -1,0 +1,73 @@
+package testUsersDAO;
+
+import java.util.List;
+
+import junit.framework.Assert;
+
+import org.junit.Test;
+
+import service.UsersDAO;
+import service_impl.UsersDAOImpl;
+
+import entity.Users;
+
+public class TestUsers {
+
+	@Test
+	public void Test(){
+		
+		Users u=new Users(1,"san","123","sdf","sfdf");
+		
+		UsersDAO udao=new UsersDAOImpl();
+		Assert.assertEquals(true, udao.usersLogin(u));
+		
+		
+		
+	}
+	
+	@Test
+	public void TestDe(){
+		
+		
+		
+		UsersDAO udao=new UsersDAOImpl();
+		Users user=udao.userDetail("san");
+		System.out.println(user.getUsername()+user.getAddress());
+		
+		
+	}
+	@Test
+	public void testChange(){
+		
+		
+		
+		UsersDAO udao=new UsersDAOImpl();
+		udao.changeEmail("223924@qq.com",1);
+		
+		
+		
+	}
+	@Test
+	public void testChangeAddress(){
+		
+		
+		
+		UsersDAO udao=new UsersDAOImpl();
+		udao.chengAddress("¹ãÎ÷¹ó¸Û",1);
+		
+		
+	}
+	@Test
+	public void testReAllUsers(){
+		
+		
+		
+		UsersDAO udao=new UsersDAOImpl();
+		List<Users> list=udao.reUsersDetail();
+		for (Users users : list) {
+			System.out.println(users.getAddress());
+		}
+		
+		
+	}
+}
