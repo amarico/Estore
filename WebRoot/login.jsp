@@ -26,7 +26,27 @@
 
 $(document).ready(function() {
 
-        //如果
+        //点击同意跳转
+        $(".submitButton").click(function(){
+        
+       var length= $("input[type='checkbox']:checked").length;
+     
+       if(length>0){
+        $(".submitButton").attr("type","submit");
+        
+       }else
+       {
+       
+       alert("请同意用户协议");
+       $(".submitButton").attr("type","button");
+       
+       }
+       
+       
+     
+     
+        });
+        
 
         //用户名格式
         
@@ -133,11 +153,11 @@ $(document).ready(function() {
 				</div>
 
 				<p class="deal">
-					<input type="checkbox" value="name" class="checkAgree">
-					我已同意用户协议
+					<input type="checkbox" value="name" class="checkAgree" >
+					我已同意用户协议 <span class="warn4"></span>
 				</p>
 				<div class="foot">
-					<input type="submit" value="提交">
+					<input type="submit" value="提交" class="submitButton">
 				</div>
 			</form>
 		</div>
