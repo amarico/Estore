@@ -3,16 +3,16 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <!-- Generated 2016-5-24 9:55:27 by Hibernate Tools 3.5.0.Final -->
 <hibernate-mapping>
-    <class name="entity.Admin" table="ADMIN">
-        <id name="aid" type="int">
-            <column name="AID" />
+    <class name="entity.GoodsDeSearch" table="GOODSDESEARCH">
+        <id name="gid" type="int" access="field">
+            <column name="GID" />
             <generator class="assigned" />
         </id>
-        <property name="adminName" type="java.lang.String">
-            <column name="ADMINNAME" />
+        <property name="chinaName" type="java.lang.String" access="field">
+            <column name="CHINANAME" />
         </property>
-        <property name="adminPassword" type="java.lang.String">
-            <column name="ADMINPASSWORD" />
+        <property name="tableName" type="java.lang.String" access="field">
+            <column name="TABLENAME" />
         </property>
     </class>
 </hibernate-mapping>

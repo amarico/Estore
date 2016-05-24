@@ -1,27 +1,27 @@
 <?xml version="1.0"?>
-<!--
-  ~ Hibernate, Relational Persistence for Idiomatic Java
-  ~
-  ~ License: GNU Lesser General Public License (LGPL), version 2.1 or later.
-  ~ See the lgpl.txt file in the root directory or <http://www.gnu.org/licenses/lgpl-2.1.html>.
-  -->
-<!DOCTYPE hibernate-mapping PUBLIC
-	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
-	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-
-<hibernate-mapping >
-
-	<class name="entity.Consult" table="COUSULT">
-		<id name="cid" type="int">
-			<generator class="native"/>
-		</id>
-		
-		<property name="uid" type="int"/>
-		<property name="gid" type="int"/>	
-		<property name="text" type="java.lang.String"/>
-		<property name="retext" type="java.lang.String"/>
-		<property name="date" type="java.util.Date"/>			
-     
-	</class>
-
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-5-24 9:55:27 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="entity.Consult" table="CONSULT">
+        <id name="cid" type="int">
+            <column name="CID" />
+            <generator class="assigned" />
+        </id>
+        <property name="uid" type="int">
+            <column name="UID" />
+        </property>
+        <property name="gid" type="int">
+            <column name="GID" />
+        </property>
+        <property name="text" type="java.lang.String">
+            <column name="TEXT" />
+        </property>
+        <property name="retext" type="java.lang.String">
+            <column name="RETEXT" />
+        </property>
+        <property name="date" type="java.util.Date">
+            <column name="DATE" />
+        </property>
+    </class>
 </hibernate-mapping>
